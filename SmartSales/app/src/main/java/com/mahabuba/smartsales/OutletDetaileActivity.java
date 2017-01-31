@@ -66,7 +66,7 @@ public class OutletDetaileActivity extends AppCompatActivity implements Location
         salesOrder.setOrderTimeStamp(new SimpleDateFormat("yy-MM-dd HH:mm:ss").format(new Date()));
         salesOrder.setOrderDate(new SimpleDateFormat("yy-MM-dd").format(new Date()));
         salesOrder.setSalesOrderLineList(new SalesOrderLineList());
-        orderedSKUListAdapter = new OrderedSKUListAdapter(getApplicationContext(), salesOrder.getSalesOrderLineList().getSalesOrderLineArray());
+        orderedSKUListAdapter = new OrderedSKUListAdapter(getApplicationContext(), salesOrder.getSalesOrderLineList().getSalesOrderLineArray(),salesOrder);
         TextView txtOutletName = (TextView) findViewById(R.id.txtOutletName);
         TextView txtOutletAddress = (TextView) findViewById(R.id.txtOutletAddress);
         TextView txtOwnerName = (TextView) findViewById(R.id.txtOwnerName);

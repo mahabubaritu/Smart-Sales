@@ -4,6 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Created by Ritu on 12/10/2016.
@@ -68,5 +69,17 @@ public class SalesOrderLineList implements Parcelable {
         }
         return result;
     }
+    public void removePromoSku(SalesOrderLine salesOrderLine) {
+        Iterator<SalesOrderLine> orderLineArray = salesOrderLineArray.iterator();
+        while (orderLineArray.hasNext()) {
+            SalesOrderLine orderLine = orderLineArray.next();
+            if (salesOrderLine.getSku().getId()==orderLine.getSku().getId()){
 
+                orderLineArray.remove();
+
+            }
+
+        }
+
+    }
 }

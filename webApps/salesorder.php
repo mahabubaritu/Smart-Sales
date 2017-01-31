@@ -65,7 +65,7 @@ $totalAmount=0;
                         <td><?php echo $row[3]; ?></td>
                         <td><?php echo $row[4]; ?></td>
                         <td><?php echo $row[5]; ?></td>
-                        <td align="center"><a href="javascript:view_id('<?php echo $row[0]; ?>')"><img src="b_edit.png" align="EDIT" /></a></td>
+                        <td align="center"><a href="javascript:view_id('<?php echo $row[0]; ?>')"><img src="report.png" align="EDIT" /></a></td>
 
                     </tr>
                     <?php

@@ -23,6 +23,7 @@
         android:textColor="@color/black"
         android:id="@+id/txtQty"
         android:text="QTY"
+        android:gravity="center"
         android:layout_weight="1"
         android:layout_width="0sp"
         android:layout_height="wrap_content" />
@@ -30,13 +31,16 @@
         android:textColor="@color/black"
         android:id="@+id/txtTotalPrice"
         android:text="Total Price"
+        android:gravity="right"
         android:layout_weight="1"
         android:layout_width="0sp"
         android:layout_height="wrap_content" />
 
     <ImageView
         android:layout_width="30dp"
-        android:layout_height="30dp" android:src="@drawable/drop"
+        android:layout_height="30dp"
+        android:id="@+id/ivDrop"
+        android:src="@drawable/drop"
         />
 
 
